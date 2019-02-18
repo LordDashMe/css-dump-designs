@@ -1,0 +1,73 @@
+.description {
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+}
+.description span {
+    font-size: 0.6em;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #efefef;
+}
+.flex-grid {
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+}
+.flex-grid .flex-grid-item {
+    display: inline-block;
+    flex-grow: 1;
+    background-color: #f00;
+    min-width: 550px;
+    height: 100px;
+    margin: 5px;
+}
+.flex-grid .flex-grid-item.empty{
+    height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.flex-grid .flex-grid-item p {
+    margin: 30px;
+    color: #fff;
+    font-size: 2em;
+}
+
+/* Mobile Size */
+@media (max-width: 600px) {
+    .flex-grid .flex-grid-item {
+        min-width: 274px;      
+    }  
+}
+
+/* Tablet Size */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .flex-grid .flex-grid-item {
+        min-width: 358px;      
+    }
+}
+
+/* Small Desktop Size */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .flex-grid .flex-grid-item {
+        min-width: 302px;      
+    }
+}
+
+/* Medium Desktop Size */
+@media (min-width: 1280px) and (max-width: 1440px) {
+    .flex-grid .flex-grid-item {
+        min-width: 343px;      
+    }
+}
+
+/* Large Desktop Size */
+@media (min-width: 1441px) and (max-width: 1907px) {
+    .flex-grid .flex-grid-item {
+        min-width: 459px;    
+    }
+}
