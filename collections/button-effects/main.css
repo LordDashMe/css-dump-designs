@@ -1,0 +1,124 @@
+body {
+    font-family: 'Montserrat';
+}
+.container {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.description {
+    font-size: 1.2em;
+}
+.description span {
+    font-size: 0.5em;
+}
+
+.button-effects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #efefef;
+}
+
+[class^="be-"] {
+    margin: .4em;
+    padding: 1em;
+    cursor: pointer;
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+    /* Prevent highlight colour when element is tapped */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /* Smooth fonts */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ripple Out Effect */
+@-webkit-keyframes be-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+@keyframes be-ripple-out {
+    100% {
+        top: -12px;
+        right: -12px;
+        bottom: -12px;
+        left: -12px;
+        opacity: 0;
+    }
+}
+.be-ripple-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(175, 161, 161, 0);
+    position: relative;
+}
+.be-ripple-out:before {
+    content: '';
+    position: absolute;
+    border: #000 solid 6px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.be-ripple-out:hover:before,
+.be-ripple-out:focus:before, 
+.be-ripple-out:active:before {
+    -webkit-animation-name: be-ripple-out;
+    animation-name: be-ripple-out;
+}
+
+/* Ripple In Effect */
+@-webkit-keyframes be-ripple-in {
+    100% {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 1;
+    }
+}
+@keyframes be-ripple-in {
+    100% {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+.be-ripple-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+.be-ripple-in:before {
+    content: '';
+    position: absolute;
+    border: #000 solid 4px;
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.be-ripple-in:hover:before, .be-ripple-in:focus:before, .be-ripple-in:active:before {
+    -webkit-animation-name: be-ripple-in;
+    animation-name: be-ripple-in;
+}

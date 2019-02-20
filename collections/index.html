@@ -3,20 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Collections</title>
+        <title>CSS Dump Designs - Collections</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <style>
         body {
             font-family: 'Montserrat';
         }
+        .home-container {
+            width: 98%;
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px dashed #efefef
+        }
+        .home-container .description {
+            display: flex;
+            justify-content: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         </style>
     </head>
     <body>
-        <div class="description">
-            <p>List of all available sample design using CSS.</p>
+        <div class="home-container">
+            <div class="description">
+                <p>CSS Dump Designs - Collections</p>
+            </div>
+            <ul>
+                <li><a href="flex-grid/index.html">Flex Grid</a></li>
+                <li><a href="button-effects/index.html">Button Effects</a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="flex-grid/index.html">Flex - Grid</a></li>
-        </ul>
     </body>
 </html>

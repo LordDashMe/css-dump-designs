@@ -1,11 +1,19 @@
-.description {
+body {
     font-family: 'Montserrat';
+}
+.container {
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.description {
     font-size: 1.2em;
 }
 .description span {
-    font-size: 0.6em;
+    font-size: 0.5em;
 }
-.flex-container {
+
+.flex-grid-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +29,7 @@
 .flex-grid .flex-grid-item {
     display: inline-block;
     flex-grow: 1;
-    background-color: #f00;
+    background-color: #000;
     min-width: 550px;
     height: 100px;
     margin: 5px;
@@ -43,28 +51,24 @@
         min-width: 274px;      
     }  
 }
-
 /* Tablet Size */
 @media (min-width: 768px) and (max-width: 1023px) {
     .flex-grid .flex-grid-item {
         min-width: 358px;      
     }
 }
-
 /* Small Desktop Size */
 @media (min-width: 1024px) and (max-width: 1279px) {
     .flex-grid .flex-grid-item {
         min-width: 302px;      
     }
 }
-
 /* Medium Desktop Size */
 @media (min-width: 1280px) and (max-width: 1440px) {
     .flex-grid .flex-grid-item {
         min-width: 343px;      
     }
 }
-
 /* Large Desktop Size */
 @media (min-width: 1441px) and (max-width: 1907px) {
     .flex-grid .flex-grid-item {
