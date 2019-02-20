@@ -6,6 +6,19 @@
         <title>Button Effects</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="main.css">
+        <script>
+            /**
+             * Temporary disable the link of a 
+             * tag from being navigated.
+             */
+			var effects = document.querySelectorAll('.button-effects-container')[0];
+            effects.addEventListener('click', function(e) {
+                if (e.target.className.indexOf('be') > -1) {
+                    e.preventDefault();
+                    e.target.blur();
+                }
+            });
+        </script>
     </head>
     <body>
         <div class="container">
@@ -17,8 +30,8 @@
                 </p>
             </div>
             <div class="button-effects-container">
-                <a class="be-ripple-in">Ripple In Click</a>
-                <a class="be-ripple-out">Ripple Out Click</a>
+                <a href="#" class="be-ripple-in">Ripple In Click</a>
+                <a href="#" class="be-ripple-out">Ripple Out Click</a>
             </div>
         </div>
     </body>
