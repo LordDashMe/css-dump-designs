@@ -6,19 +6,6 @@
         <title>Button Effects</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="main.css">
-        <script>
-            /**
-             * Temporary disable the link of a 
-             * tag from being navigated.
-             */
-			var effects = document.querySelectorAll('.button-effects-container')[0];
-            effects.addEventListener('click', function(e) {
-                if (e.target.className.indexOf('be') > -1) {
-                    e.preventDefault();
-                    e.target.blur();
-                }
-            });
-        </script>
     </head>
     <body>
         <div class="container">
@@ -30,9 +17,21 @@
                 </p>
             </div>
             <div class="button-effects-container">
-                <a href="#" class="be-ripple-in">Ripple In Click</a>
-                <a href="#" class="be-ripple-out">Ripple Out Click</a>
+                <a href="#" class="be-rip-in">Rip In</a>
+                <a href="#" class="be-rip-out">Rip Out</a>
+                <a href="#" class="be-change-background-color">Change Background Color</a>
+                <a href="#" class="be-nuclear">Nuclear</a>
+                <a href="#" class="be-horizontal-wakeup">Horizontal Wakeup</a>
             </div>
         </div>
     </body>
+    <script>
+        var effects = document.querySelectorAll('.button-effects-container')[0];
+        effects.addEventListener('click', function(e) {
+            if (e.target.className.indexOf('be') > -1) {
+                e.preventDefault();
+                e.target.blur();
+            }
+        });
+    </script>
 </html>
