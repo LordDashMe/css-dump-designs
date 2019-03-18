@@ -1,6 +1,6 @@
 # CSS Dump Designs
 
-A collection of CSS designs based on my output of learning and practice.
+A collection of CSS designs based on my output of learning and practices.
 
 ## License
 
