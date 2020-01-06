@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+<body>
+    <div class="container">
+        <a href="../../index.html">[ Home ]</a>
+        <a href="../index.html">[ Flex Grid ]</a>
+        <div class="wrap">
+            <h1>Other Examples</h1>
+            
+            <h2>Grid Sizes</h2>
+            <p>Our grid system is composed of 6 flexible columns with a gutter between columns of 24px. We apply border-box so that the border and padding is included in the width of the grid columns.</p>
+            <div class="row">
+                <div class="col col--1of1"><p class="filler">.col--1of1</p></div>
+            </div>
+            <div class="row">
+                <div class="col col--1of2"><p class="filler">.col--1of2</p></div>
+                <div class="col col--1of2"><p class="filler">.col--1of2</p></div>
+            </div>
+            <div class="row">
+                <div class="col col--1of3"><p class="filler">.col--1of3</p></div>
+                <div class="col col--1of3"><p class="filler">.col--1of3</p></div>
+                <div class="col col--1of3"><p class="filler">.col--1of3</p></div>
+            </div>
+            <div class="row">
+                <div class="col col--1of6">
+                <p class="filler">.col--1of6</p>
+                </div>
+                <div class="col col--1of6">
+                <p class="filler">.col--1of6</p>
+                </div>
+                <div class="col col--1of6">
+                <p class="filler">.col--1of6</p>
+                </div>
+                <div class="col col--1of6">
+                <p class="filler">.col--1of6</p>
+                </div>
+                <div class="col col--1of6">
+                <p class="filler">.col--1of6</p>
+                </div>
+                <div class="col col--1of6">
+                <p class="filler">.col--1of6</p>
+                </div>
+            </div>
+
+            <h2>Mixed Grids</h2>
+            <p>The grid layout is easily extended by nesting and mixing different column sizes.</p>
+            <div class="row">
+                <div class="col col--1of6"><p class="filler">.col--1of6</p></div>
+                <div class="col col--5of6">
+                <p class="filler">.col--5of6</p></div>
+            </div>
+            <div class="row">
+                <div class="col col--1of3"><p class="filler">.col--1of3</p></div>
+                <div class="col col--2of3">
+                <p class="filler">.col--2of3</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col--3of6">
+                <p class="filler">.col--3of6</p>
+                </div>
+                <div class="col col--3of6">
+                <p class="filler">.col--3of6</p>
+                </div>
+            </div>
+            <p>When nesting grids use the <code>col--group</code> class to eliminate gutters on the parent element of the columns that are being nested.</p>
+            <div class="row">
+                <div class="col col--1of3">
+                <p class="filler">.col--1of3</p>
+                </div>
+                <div class="col col--2of3 col--group">
+                <div class="row">
+                    <div class="col col--1of2">
+                    <p class="filler">.col--1of2</p>
+                    </div>
+                    <div class="col col--1of2">
+                    <p class="filler">.col--1of2</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>    
+</html>

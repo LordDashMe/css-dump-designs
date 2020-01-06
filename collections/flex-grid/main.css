@@ -6,12 +6,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.description {
-    font-size: 1.2em;
-}
-.description span {
-    font-size: 0.5em;
-}
 
 .flex-grid-container {
     display: flex;

@@ -1,0 +1,119 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+.container {
+  width: 99%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+.filler {
+  width: 100%;
+  margin: 12px 0;
+  padding: 44px 0;
+  background-color: #ff1111;
+  color: #fff;
+  text-align: center;
+}
+
+.wrap {
+  max-width: 1344px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-bottom: 24px;
+}
+
+.col--group > .row {
+  margin-bottom: 0;
+}
+
+.col {
+  background-color: #ff5555;
+}
+
+.col--group .col {
+  background-color: #ffaaaa;
+}
+
+.row {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 640px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+.col {
+  flex: 0 0 auto;
+  padding: 0 12px;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.col--1of1,
+.col--2of2,
+.col--3of3,
+.col--6of6 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 640px) {
+  .col--1of2,
+  .col--3of6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .col--1of3,
+  .col--2of6 {
+    flex-basis: 33.3333333%;
+    max-width: 33.3333333%;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .col--1of6 {
+    flex-basis: 16.6666667%;
+    max-width: 16.6666667%;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .col--2of3,
+  .col--4of6 {
+    flex-basis: 66.6666667%;
+    max-width: 66.6666667%;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .col--5of6 {
+    flex-basis: 83.3333333%;
+    max-width: 83.3333333%;
+  }
+}
+
+.col--group {
+  padding: 0;
+}
