@@ -2,11 +2,15 @@
     {
         "name": "Chowfan",
         "description": "Best seller rice bowl in chowking.",
-        "price": "90.00"
+        "price": 90.00,
+        "cover": "./resources/img/chaofan.jpg",
+        "cover_alt": "Chowfan Product"
     },
     {
         "name": "Wanton Soup",
         "description": "Best seller soup bowl in chowking.",
-        "price": "120.00"
+        "price": 120.00,
+        "cover": "./resources/img/wanton-soup.jpg",
+        "cover_alt": "Chowfan Product"
     }
 ]
