@@ -1,13 +1,17 @@
 [
     {
+        "id": "PID-1",
         "name": "Chowfan",
+        "teaser": "Pork belly, squid balls, dark soy sauce, green peas, fish sauce.",
         "description": "Chao Fan is a Filipino Chinese fried rice dish prepared with day-old left-over rice stir fried with meats like pork together with vegetables like spring onions, green peas and corn.",
         "price": 90.00,
         "cover": "./resources/img/chaofan.jpg",
         "cover_alt": "Chowfan Product"
     },
     {
+        "id": "PID-2"
         "name": "Wanton Soup",
+        "teaser": "Ground pork, wonton wrappers, soy sauce, sesame oil, chicken broth.",
         "description": "Wonton soup is a standard of Chinese cuisine and made from seasoned chicken broth with filled wontons. Wontons are an Asian equivalent of ravioli or tortellini when they are folded around a spiced meat mixture.",
         "price": 120.75,
         "cover": "./resources/img/wanton-soup.jpg",
